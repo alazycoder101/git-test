@@ -10,3 +10,10 @@ drop duplicate commits
 
 How to identify duplicate commits?
 
+same commmit message but different sha code,
+the orginal commit should be dropped and pick up the new one
+
+```bash
+git checkout --theirs changed/files
+
+```
