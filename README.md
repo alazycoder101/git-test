@@ -15,5 +15,10 @@ the orginal commit should be dropped and pick up the new one
 
 ```bash
 git checkout --theirs changed/files
+```
+
+# merge conflict
+```
+git rebase --continue
 
 ```
