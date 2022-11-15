@@ -6,4 +6,7 @@ Workflow test
 3. set up branch C
 
 Change last commit in C
+drop duplicate commits
+
+How to identify duplicate commits?
 
