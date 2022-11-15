@@ -22,3 +22,8 @@ git checkout --theirs changed/files
 git rebase --continue
 
 ```
+
+```
+git rebase -i C # rebase based on C for B
+git rebase -i C # again to drop the duplicate commits
+```
