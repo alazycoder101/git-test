@@ -1,4 +1,15 @@
 version: 2.1
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: /.*/
+            pull_request:
+              types:
+                - approved
 jobs:
   build:
     docker:
