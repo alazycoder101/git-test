@@ -5,14 +5,11 @@ jobs:
       - image: cimg/base:2023.03
     steps:
       - checkout
-      - run: echo "this is the build job"
+      - run: env && echo "this is the build job"
 workflows:
   build-and-test:
     jobs:
       - build:
         filters:
-          branches:
-            only: /.*/
-          pull_request:
-            types:
-              - approved
+          pull_request_review:
+            types: [submitted]
